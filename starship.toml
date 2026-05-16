@@ -1,6 +1,6 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """$os$username$hostname in $directory$git_branch$git_status$bun$c$cmake$cobol$crystal$dart$deno$dotnet$elixir$elm$erlang$fennel$golang$gradle$guix_shell$haskell$haxe$helm$java$julia$kotlin$lua$maven$meson$mojo$nim$nodejs$ocaml$odin$opa$perl$php$pixi$pulumi$purescript$python$raku$red$rlang$ruby$rust$scala$singularity$solidity$spack$swift$terraform$typst$vagrant$vlang$xmake$zig$aws$gcloud$openstack$azure$conda$direnv$docker_context$kubernetes$package$buf$nix_shell$cmd_duration
+format = """$os$username in $directory$git_branch$git_status$bun$c$cmake$cobol$crystal$dart$deno$dotnet$elixir$elm$erlang$fennel$golang$gradle$guix_shell$haskell$haxe$helm$java$julia$kotlin$lua$maven$meson$mojo$nim$nodejs$ocaml$odin$opa$perl$php$pixi$pulumi$purescript$python$raku$red$rlang$ruby$rust$scala$singularity$solidity$spack$swift$terraform$typst$vagrant$vlang$xmake$zig$aws$gcloud$openstack$azure$conda$direnv$docker_context$kubernetes$package$buf$nix_shell$cmd_duration
 $character"""
 
 
@@ -10,12 +10,12 @@ success_symbol = '[❯](bold #FFF0C4)'
 error_symbol = '[❯](bold #E05C5C)'
 
 [os]
-style = '#FFF0C4'
+style = '#660B05'
 disabled = false
 
 [username]
-style_user = '#C4724A'
-format = '[$user]($style)[@](fg:#C4724A)'
+style_user = '#FFF0C4'
+format = '[$user]($style)'
 show_always = true
 
 [git_status]
@@ -29,10 +29,10 @@ style = '#D4A84B'
 
 [aws]
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [azure]
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [battery]
 full_symbol = "󰁹 "
 charging_symbol = "󰂄 "
@@ -40,162 +40,201 @@ discharging_symbol = "󰂃 "
 unknown_symbol = "󰂑 "
 empty_symbol = "󰂎 "
 [buf]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [bun]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [c]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [cpp]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [cmake]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [cobol]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [conda]
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [container]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [crystal]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [dart]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [deno]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [direnv]
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [directory]
 read_only = " 󰌾"
-style = '#E8A87C'
+style = '#E05C5C'
 [docker_context]
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [dotnet]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [elixir]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [elm]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [erlang]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [fennel]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [fortran]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [fossil_branch]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [gcloud]
 symbol = "󱇶 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [gleam]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [git_branch]
-format = '[$symbol$branch(:$remote_branch)]($style) '
+format = '[$symbol]($style)[$branch(:$remote_branch)](bold #FFF0C4) '
 truncation_length = 20
 truncation_symbol = '…'
 symbol = " "
-style = '#B07CC6'
+style = 'bold #660B05'
 [git_commit]
 tag_symbol = '  '
 [golang]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [gradle]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [guix_shell]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [haskell]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [haxe]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [helm]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [hg_branch]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [hostname]
 ssh_only = false
 format = '[$ssh_symbol$hostname]($style)'
 ssh_symbol = " "
 style = '#C4724A'
 [java]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [julia]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [kotlin]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [kubernetes]
 symbol = "󱃾 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [lua]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [maven]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [memory_usage]
 symbol = "󰍛 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [meson]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󰔷 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [mojo]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󰈸 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [nats]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [netns]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󰛳 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [nim]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [nix_shell]
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [nodejs]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [ocaml]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [odin]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󰟢 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [opa]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [openstack]
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [os.symbols]
 AIX = " "
 AlmaLinux = " "
@@ -258,84 +297,109 @@ Zorin = " "
 
 
 [package]
+format = 'is [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󰏗 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [perl]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [php]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [pijul_channel]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [pixi]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󰏗 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [pulumi]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [purescript]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [python]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [raku]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󱖊 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [red]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󱍼 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [rlang]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󰟔 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [ruby]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [rust]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󱘗 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [scala]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [shlvl]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = "󰹍 "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [singularity]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [solidity]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [spack]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [status]
 symbol = " "
 style = '#E05C5C'
 disabled = false
 [sudo]
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [swift]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [terraform]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [vlang]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [typst]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [vagrant]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [xmake]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
 [zig]
+format = 'via [$symbol](bold #660B05)[$version ](bold #FFF0C4)'
 symbol = " "
-style = '#7BAFD4'
+style = 'bold #660B05'
