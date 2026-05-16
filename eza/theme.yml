@@ -1,0 +1,243 @@
+# Marron palette role mapping:
+#   #E8A87C — directories, d-bit
+#   #FFF0C4 — source/code files       #FFF0C4 dimmed — dotfiles/config
+#   #C4724A — git-tracked config files (.gitignore, .gitconfig)
+#   #E05C5C — lockfiles, build cruft
+#   #D4A84B — images, archives
+#   #7DBF8E — executables, shell scripts, perm-r
+#   #7BAFD4 — docs/markdown, symlinks, sizes, perm-w... wait see perms below
+#   #B07CC6 — audio, video, user/group columns
+#   #7DBF8E / #D4A84B / #E05C5C — perm bits r / w / x
+#   #E8A87C — the d directory indicator bit
+#   #7BAFD4 — file sizes (all magnitudes)
+#   #FFF0C4 dimmed — timestamps
+
+filekinds:
+  directory:
+    foreground: "#E8A87C"
+    is_bold: true
+  symlink:
+    foreground: "#7BAFD4"
+    is_italic: true
+  executable_file:
+    foreground: "#7DBF8E"
+    is_bold: true
+  socket:
+    foreground: "#D4A84B"
+  pipe:
+    foreground: "#D4A84B"
+  character_device:
+    foreground: "#D4A84B"
+    is_bold: true
+  block_device:
+    foreground: "#D4A84B"
+    is_bold: true
+  broken_symlink:
+    foreground: "#E05C5C"
+    is_bold: true
+  missing_file:
+    foreground: "#E05C5C"
+    is_dimmed: true
+  special_file:
+    foreground: "#FFF0C4"
+
+file_type:
+  image:
+    foreground: "#D4A84B"
+  video:
+    foreground: "#B07CC6"
+    is_bold: true
+  music:
+    foreground: "#B07CC6"
+  crypto:
+    foreground: "#C4724A"
+    is_bold: true
+  document:
+    foreground: "#7BAFD4"
+  compressed:
+    foreground: "#D4A84B"
+    is_bold: true
+  temp:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+  compiled:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+  build:
+    foreground: "#E05C5C"
+  source:
+    foreground: "#FFF0C4"
+
+perms:
+  # directory indicator (d) inherits filekinds.directory → #E8A87C
+  user_read:
+    foreground: "#7DBF8E"
+    is_bold: true
+  user_write:
+    foreground: "#D4A84B"
+    is_bold: true
+  user_execute_file:
+    foreground: "#E05C5C"
+    is_bold: true
+  user_execute_other:
+    foreground: "#E05C5C"
+  group_read:
+    foreground: "#7DBF8E"
+    is_dimmed: true
+  group_write:
+    foreground: "#D4A84B"
+    is_dimmed: true
+  group_execute:
+    foreground: "#E05C5C"
+    is_dimmed: true
+  other_read:
+    foreground: "#7DBF8E"
+    is_dimmed: true
+  other_write:
+    foreground: "#D4A84B"
+    is_dimmed: true
+  other_execute:
+    foreground: "#E05C5C"
+    is_dimmed: true
+  special_user_file:
+    foreground: "#B07CC6"
+    is_bold: true
+  special_other:
+    foreground: "#B07CC6"
+  attribute:
+    foreground: "#B07CC6"
+    is_dimmed: true
+
+size:
+  major:
+    foreground: "#7BAFD4"
+  minor:
+    foreground: "#7BAFD4"
+    is_dimmed: true
+  number_byte:
+    foreground: "#7BAFD4"
+  unit_byte:
+    foreground: "#7BAFD4"
+    is_dimmed: true
+  number_kilo:
+    foreground: "#7BAFD4"
+  unit_kilo:
+    foreground: "#7BAFD4"
+    is_dimmed: true
+  number_mega:
+    foreground: "#7BAFD4"
+  unit_mega:
+    foreground: "#7BAFD4"
+    is_dimmed: true
+  number_giga:
+    foreground: "#7BAFD4"
+    is_bold: true
+  unit_giga:
+    foreground: "#7BAFD4"
+    is_bold: true
+    is_dimmed: true
+  number_huge:
+    foreground: "#7BAFD4"
+    is_bold: true
+  unit_huge:
+    foreground: "#7BAFD4"
+    is_bold: true
+    is_dimmed: true
+  none:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+
+users:
+  user_you:
+    foreground: "#B07CC6"
+    is_bold: true
+  user_root:
+    foreground: "#E05C5C"
+    is_bold: true
+  user_other:
+    foreground: "#B07CC6"
+    is_dimmed: true
+  group_yours:
+    foreground: "#B07CC6"
+  group_other:
+    foreground: "#B07CC6"
+    is_dimmed: true
+  group_root:
+    foreground: "#E05C5C"
+
+links:
+  normal:
+    foreground: "#FFF0C4"
+  multi_link_file:
+    foreground: "#B07CC6"
+    is_bold: true
+
+git:
+  new:
+    foreground: "#7DBF8E"
+    is_bold: true
+  modified:
+    foreground: "#D4A84B"
+  deleted:
+    foreground: "#E05C5C"
+  renamed:
+    foreground: "#7BAFD4"
+  ignored:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+  conflicted:
+    foreground: "#E05C5C"
+    is_bold: true
+
+git_repo:
+  branch_main:
+    foreground: "#7DBF8E"
+    is_bold: true
+  branch_other:
+    foreground: "#7BAFD4"
+  git_clean:
+    foreground: "#7DBF8E"
+  git_dirty:
+    foreground: "#D4A84B"
+
+dates:
+  hour_old:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+  day_old:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+  older:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+
+inode:
+  inode:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+
+blocks:
+  blocks:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+
+header:
+  header:
+    foreground: "#FFF0C4"
+    is_bold: true
+    is_underline: true
+
+symlink_path:
+  symlink_path:
+    foreground: "#7BAFD4"
+    is_italic: true
+
+octal:
+  octal:
+    foreground: "#FFF0C4"
+    is_dimmed: true
+
+flags:
+  uchg:
+    foreground: "#D4A84B"
+    is_bold: true
