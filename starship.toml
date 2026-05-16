@@ -86,6 +86,8 @@ style = 'bold #660B05'
 symbol = " "
 style = 'bold #660B05'
 [directory]
+truncation_length = 1
+truncate_to_repo = false
 read_only = " 󰌾"
 style = '#E05C5C'
 [docker_context]
