@@ -8,13 +8,14 @@
 #   #7BAFD4 — docs/markdown, symlinks, sizes, perm-w... wait see perms below
 #   #B07CC6 — audio, video, user/group columns
 #   #7DBF8E / #D4A84B / #E05C5C — perm bits r / w / x
-#   #E8A87C — the d directory indicator bit
+#   #8C1007 — the d directory indicator bit
+#   #8C1007 — source/code files (darker accent red)
 #   #7BAFD4 — file sizes (all magnitudes)
 #   #FFF0C4 dimmed — timestamps
 
 filekinds:
   directory:
-    foreground: "#E8A87C"
+    foreground: "#E05C5C"
     is_bold: true
   symlink:
     foreground: "#7BAFD4"
@@ -64,9 +65,9 @@ file_type:
     foreground: "#FFF0C4"
     is_dimmed: true
   build:
-    foreground: "#E05C5C"
+    foreground: "#E8A87C"
   source:
-    foreground: "#FFF0C4"
+    foreground: "#8C1007"
 
 perms:
   # directory indicator (d) inherits filekinds.directory → #E8A87C
