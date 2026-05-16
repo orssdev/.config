@@ -1,171 +1,201 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
+format = """$os$username$hostname in $directory$git_branch$git_status$bun$c$cmake$cobol$crystal$dart$deno$dotnet$elixir$elm$erlang$fennel$golang$gradle$guix_shell$haskell$haxe$helm$java$julia$kotlin$lua$maven$meson$mojo$nim$nodejs$ocaml$odin$opa$perl$php$pixi$pulumi$purescript$python$raku$red$rlang$ruby$rust$scala$singularity$solidity$spack$swift$terraform$typst$vagrant$vlang$xmake$zig$aws$gcloud$openstack$azure$conda$direnv$docker_context$kubernetes$package$buf$nix_shell$cmd_duration
+$character"""
+
+
+
+[character]
+success_symbol = '[❯](bold #FFF0C4)'
+error_symbol = '[❯](bold #E05C5C)'
+
+[os]
+style = '#FFF0C4'
+disabled = false
+
+[username]
+style_user = '#C4724A'
+format = '[$user]($style)[@](fg:#C4724A)'
+show_always = true
+
+[git_status]
+modified = '[✎](fg:#E05C5C)'
+untracked = '[?](fg:#D4A84B)'
+
+[cmd_duration]
+style = '#D4A84B'
+
+
+
 [aws]
 symbol = " "
-
+style = '#7BAFD4'
 [azure]
 symbol = " "
-
+style = '#7BAFD4'
 [battery]
 full_symbol = "󰁹 "
 charging_symbol = "󰂄 "
 discharging_symbol = "󰂃 "
 unknown_symbol = "󰂑 "
 empty_symbol = "󰂎 "
-
 [buf]
 symbol = " "
-
+style = '#7BAFD4'
 [bun]
 symbol = " "
-
+style = '#7BAFD4'
 [c]
 symbol = " "
-
+style = '#7BAFD4'
 [cpp]
 symbol = " "
-
+style = '#7BAFD4'
 [cmake]
 symbol = " "
-
+style = '#7BAFD4'
 [cobol]
 symbol = " "
-
+style = '#7BAFD4'
 [conda]
 symbol = " "
-
+style = '#7BAFD4'
 [container]
 symbol = " "
-
+style = '#7BAFD4'
 [crystal]
 symbol = " "
-
+style = '#7BAFD4'
 [dart]
 symbol = " "
-
+style = '#7BAFD4'
 [deno]
 symbol = " "
-
+style = '#7BAFD4'
 [direnv]
 symbol = " "
-
+style = '#7BAFD4'
 [directory]
 read_only = " 󰌾"
-
+style = '#E8A87C'
 [docker_context]
 symbol = " "
-
+style = '#7BAFD4'
 [dotnet]
 symbol = " "
-
+style = '#7BAFD4'
 [elixir]
 symbol = " "
-
+style = '#7BAFD4'
 [elm]
 symbol = " "
-
+style = '#7BAFD4'
 [erlang]
 symbol = " "
-
+style = '#7BAFD4'
 [fennel]
 symbol = " "
-
+style = '#7BAFD4'
 [fortran]
 symbol = " "
-
+style = '#7BAFD4'
 [fossil_branch]
 symbol = " "
-
+style = '#7BAFD4'
 [gcloud]
 symbol = "󱇶 "
-
+style = '#7BAFD4'
 [gleam]
 symbol = " "
-
+style = '#7BAFD4'
 [git_branch]
+format = '[$symbol$branch(:$remote_branch)]($style) '
+truncation_length = 20
+truncation_symbol = '…'
 symbol = " "
-
+style = '#B07CC6'
 [git_commit]
 tag_symbol = '  '
-
 [golang]
 symbol = " "
-
+style = '#7BAFD4'
 [gradle]
 symbol = " "
-
+style = '#7BAFD4'
 [guix_shell]
 symbol = " "
-
+style = '#7BAFD4'
 [haskell]
 symbol = " "
-
+style = '#7BAFD4'
 [haxe]
 symbol = " "
-
+style = '#7BAFD4'
 [helm]
 symbol = " "
-
+style = '#7BAFD4'
 [hg_branch]
 symbol = " "
-
+style = '#7BAFD4'
 [hostname]
+ssh_only = false
+format = '[$ssh_symbol$hostname]($style)'
 ssh_symbol = " "
-
+style = '#C4724A'
 [java]
 symbol = " "
-
+style = '#7BAFD4'
 [julia]
 symbol = " "
-
+style = '#7BAFD4'
 [kotlin]
 symbol = " "
-
+style = '#7BAFD4'
 [kubernetes]
 symbol = "󱃾 "
-
+style = '#7BAFD4'
 [lua]
 symbol = " "
-
+style = '#7BAFD4'
 [maven]
 symbol = " "
-
+style = '#7BAFD4'
 [memory_usage]
 symbol = "󰍛 "
-
+style = '#7BAFD4'
 [meson]
 symbol = "󰔷 "
-
+style = '#7BAFD4'
 [mojo]
 symbol = "󰈸 "
-
+style = '#7BAFD4'
 [nats]
 symbol = " "
-
+style = '#7BAFD4'
 [netns]
 symbol = "󰛳 "
-
+style = '#7BAFD4'
 [nim]
 symbol = " "
-
+style = '#7BAFD4'
 [nix_shell]
 symbol = " "
-
+style = '#7BAFD4'
 [nodejs]
 symbol = " "
-
+style = '#7BAFD4'
 [ocaml]
 symbol = " "
-
+style = '#7BAFD4'
 [odin]
 symbol = "󰟢 "
-
+style = '#7BAFD4'
 [opa]
 symbol = " "
-
+style = '#7BAFD4'
 [openstack]
 symbol = " "
-
+style = '#7BAFD4'
 [os.symbols]
 AIX = " "
 AlmaLinux = " "
@@ -226,83 +256,86 @@ Void = " "
 Windows = "󰍲 "
 Zorin = " "
 
+
 [package]
 symbol = "󰏗 "
-
+style = '#7BAFD4'
 [perl]
 symbol = " "
-
+style = '#7BAFD4'
 [php]
 symbol = " "
-
+style = '#7BAFD4'
 [pijul_channel]
 symbol = " "
-
+style = '#7BAFD4'
 [pixi]
 symbol = "󰏗 "
-
+style = '#7BAFD4'
 [pulumi]
 symbol = " "
-
+style = '#7BAFD4'
 [purescript]
 symbol = " "
-
+style = '#7BAFD4'
 [python]
 symbol = " "
-
+style = '#7BAFD4'
 [raku]
 symbol = "󱖊 "
-
+style = '#7BAFD4'
 [red]
 symbol = "󱍼 "
-
+style = '#7BAFD4'
 [rlang]
 symbol = "󰟔 "
-
+style = '#7BAFD4'
 [ruby]
 symbol = " "
-
+style = '#7BAFD4'
 [rust]
 symbol = "󱘗 "
-
+style = '#7BAFD4'
 [scala]
 symbol = " "
-
+style = '#7BAFD4'
 [shlvl]
 symbol = "󰹍 "
-
+style = '#7BAFD4'
 [singularity]
 symbol = " "
-
+style = '#7BAFD4'
 [solidity]
 symbol = " "
-
+style = '#7BAFD4'
 [spack]
 symbol = " "
-
+style = '#7BAFD4'
 [status]
 symbol = " "
-
+style = '#E05C5C'
+disabled = false
 [sudo]
 symbol = " "
-
+style = '#7BAFD4'
 [swift]
 symbol = " "
-
+style = '#7BAFD4'
 [terraform]
 symbol = " "
-
+style = '#7BAFD4'
 [vlang]
 symbol = " "
-
+style = '#7BAFD4'
 [typst]
 symbol = " "
-
+style = '#7BAFD4'
 [vagrant]
 symbol = " "
-
+style = '#7BAFD4'
 [xmake]
 symbol = " "
-
+style = '#7BAFD4'
 [zig]
 symbol = " "
+style = '#7BAFD4'
