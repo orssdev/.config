@@ -1,8 +1,9 @@
 return {
-    'kungfusheep/mfd.nvim',
+    'ellisonleao/gruvbox.nvim',
     lazy = false,
     priority = 1000,
     config = function()
-        vim.cmd.colorscheme "mfd-flir-rh"
+        require('gruvbox').setup({ transparent_mode = true })
+        vim.cmd.colorscheme 'gruvbox'
     end,
 }
