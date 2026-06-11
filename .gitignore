@@ -14,7 +14,7 @@ Icon?
 
 # Directories
 configstore/
-iterm2/sockets/
+iterm2/
 
 # Editor Settings
 .vscode/
