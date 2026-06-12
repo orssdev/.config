@@ -84,6 +84,8 @@ symbol = " "
 
 [git_branch]
 symbol = " "
+truncation_length = 15
+truncation_symbol = "…"
 
 [git_commit]
 tag_symbol = '  '
