@@ -1,3 +1,4 @@
+-- Requires macOS ctrl+1 enabled: System Settings → Keyboard → Shortcuts → Mission Control → "Switch to Desktop 1"
 hs.hotkey.bind({"cmd", "alt"}, "1", function()
   hs.eventtap.keyStroke({"ctrl"}, "1")
 end)
