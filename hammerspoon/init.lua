@@ -1,13 +1,10 @@
--- Requires macOS ctrl+1 enabled: System Settings → Keyboard → Shortcuts → Mission Control → "Switch to Desktop 1"
-hs.hotkey.bind({"cmd", "alt"}, "1", function()
-  hs.eventtap.keyStroke({"ctrl"}, "1")
-end)
-
-hs.hotkey.bind({"cmd", "alt"}, "2", function()
+-- Note: ctrl+1 is reserved by macOS Mission Control (System Settings → Keyboard → Shortcuts → Mission Control → "Switch to Desktop 1").
+-- Bindings start at ctrl+2 to avoid that conflict.
+hs.hotkey.bind({"ctrl"}, "2", function()
   hs.application.launchOrFocus("iTerm")
 end)
 
-hs.hotkey.bind({"cmd", "alt"}, "3", function()
+hs.hotkey.bind({"ctrl"}, "3", function()
   hs.application.launchOrFocus("Firefox")
 end)
 
