@@ -1,7 +1,13 @@
 return {
     {
         'lewis6991/gitsigns.nvim',
+        config = function(_, opts)
+            -- Make blame virtual text more readable
+            vim.api.nvim_set_hl(0, 'GitSignsCurrentLineBlame', { fg = '#ebdbb2', italic = true })
+            require('gitsigns').setup(opts)
+        end,
         opts = {
+            current_line_blame_opts = { delay = 0 },
             on_attach = function(bufnr)
                 local gs = require('gitsigns')
                 local function map(l, r, desc)
