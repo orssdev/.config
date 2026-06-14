@@ -15,6 +15,13 @@ Icon?
 # Directories
 configstore/
 iterm2/
+tmux/plugins/
+yazi/flavors/
+hammerspoon/Spoons/
+btop/themes/
+
+# Generated files
+nvim/lazy-lock.json
 
 # Editor Settings
 .vscode/
